@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&family=Ubuntu:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+nav {
+  background-color: #96baff;
+  height: 7vh;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  color: white;
+}
+
+.camisas,
+.pantalones,
+.accesorios,
+.calzado,
+.exito {
+  background-color: #96baff;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.accesorios {
+  margin-bottom: 5rem;
+}
+
+.exito {
+  margin-top: 5rem;
+  color: rgba(255, 255, 255, 0.774);
+}
+
+.monto {
+  background-color: coral;
+  margin: 2rem 0;
+}
+
+.articulo {
+  background-color: #dafffb;
+  width: 17rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.4rem 2rem rgba(66, 66, 66, 0.507);
+  transition: all 0.5s;
+  margin: 5rem 0;
+  height: fit-content;
+}
+
+.articulo:hover {
+  transform: scale(1.1);
+}
+
+img {
+  margin-top: 1rem;
+  height: 15rem;
+  width: 15rem;
+  object-fit: cover;
+  border-radius: inherit;
+}
+
+ul {
+  list-style: none;
+}
+h2 {
+  text-align: center;
+  margin: 2rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+li:first-of-type,
+button {
+  margin-top: 0.5rem;
+}
+
+li:last-child {
+  padding: 1rem;
+  text-align: justify;
+}
+
+.TagDescuento {
+  width: fit-content;
+  padding: 0.1rem 1.4rem;
+  border-radius: 1rem;
+  color: white;
+  font-weight: 700;
+  background-color: #7c83fd;
+  border: 2px solid rgba(0, 183, 255, 0.514);
+}
+
+li:not(:last-child),
+button {
+  display: flex;
+  margin-left: 1rem;
+}
+li:first-of-type {
+  font-weight: bold;
+}
+button {
+  border-radius: 16px;
+  padding: 0.3rem 0.6rem;
+  background-color: white;
+  text-transform: uppercase;
+  border-color: rgba(0, 183, 255, 0.514);
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+button:hover {
+  color: white;
+  background-color: #7c83fd;
+  cursor: pointer;
+}
+.comprar {
+  margin: 0;
+}
